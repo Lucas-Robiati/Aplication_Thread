@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<unistd.h>
-#include<pthreads.h>
+#include<pthread.h>
+
+pthread_t t[2];
 
 int main(int argc, char *argv[])
 {
