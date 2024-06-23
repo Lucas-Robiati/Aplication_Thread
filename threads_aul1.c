@@ -44,8 +44,9 @@ int main(void)
   pthread_create(&t1,NULL, (void *) fuc_1, (void *)&param1);
   pthread_create(&t2,NULL, (void *) fuc_2, (void *)&param2);
 
-  pthread_join(t1, NULL);
-  pthread_join(t2,NULL);
+  pthread_join(t1, NULL); // pausa a thread "main" para que a thread "t1" possa terminar a execução
+  pthread_join(t2,NULL); // pausa a thread "main" para que a thread "t2" possa terminar a execução
+
 
 return 0;
 }
