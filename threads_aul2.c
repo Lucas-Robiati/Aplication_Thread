@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <unistd.h>
 #include <pthread.h>
@@ -7,8 +6,6 @@ pthread_t t1;
 pthread_t t2;	
 int ERRO_TH = 111;		// Codigo que indica erro na thread
 int SUCESSO_TH = 222; 	// Codigo que indica sucesso na thread
-
-
 
 void *codigo_tarefa_1(void){
 	for( int ns=0; ns < 10; ++ns) {
